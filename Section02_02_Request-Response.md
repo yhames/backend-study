@@ -25,12 +25,12 @@ graph LR
 sequenceDiagram
     participant Client
     participant Server
-    Client-->>Server: Request
-    Server-->>Server: Parse Request
-    Server-->>Server: Process Request
-    Server-->>Client: Response
-    Client-->>Client: Parse Response
-    Client-->>Client: Consume Response
+    Client->>Server: Request
+    Note right of Server: Parse Request
+    Note right of Server: Process Request
+    Server->>Client: Response
+    Note left of Client: Parse Response
+    Note left of Client: Consume Response
 ```
 
 * 클라이언트에서 Request를 보냅니다.

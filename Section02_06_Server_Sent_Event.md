@@ -10,7 +10,7 @@ One Request, a very very long response
  
 Server Send Event는 서버의 응답을 지속적으로 Streaming하는 방식 입니다.
 
-순수하게 Http로 동작하기 떄문에 webSocket과 같은 다른 프로토콜을 사용하지 않아도 됩니다.
+**순수하게 Http로 동작**하기 떄문에 webSocket과 같은 다른 프로토콜을 사용하지 않아도 됩니다.
 
 ```mermaid
 sequenceDiagram
@@ -18,9 +18,11 @@ sequenceDiagram
   participant Server
   Client->Server: Bidirectional connection
   Client->>Server: Request
+  Note right of Server: Content-Type: text/event-stream
   Server->>Client: event1
   Server->>Client: event2
   Server->>Client: event3
+  Server->>Client: ...
 ```
 
 ## Server Send Event의 장단점

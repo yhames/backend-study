@@ -25,6 +25,7 @@ sequenceDiagram
   Server->>Client: NO
 
   Client->>Server: Is 42 Ready?
+  Note right of Server: process done
   Server->>Client: Response
 ```
 

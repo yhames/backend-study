@@ -24,7 +24,7 @@ sequenceDiagram
     participant Client
     participant Server
     Client->Server: Bidirectional Connection
-    Server->Server: Backend gets messages
+    Note right of Server: Backend gets messages
     Server->>Client: New Message 1
     Server->>Client: New Message 2
 ```
