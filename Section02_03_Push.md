@@ -12,9 +12,12 @@ Push Model은 실시간 알림과 같은 기능을 구현할 때 사용됩니다
 
 ## Push란?
 
-Push란 RabbitMQ와 같은 양방향 프로토콜을 사용하여 클라이언트에서 요청을 보내지 않아도 데이터를 전송하는 방식입니다.
+Push란 `RabbitMQ`와 같은 양방향 프로토콜을 사용하여 클라이언트에서 요청을 보내지 않아도 데이터를 전송하는 방식입니다.
 
-서버에서 RabbitMQ의 큐 시스템에 데이터를 전송하면, RabbitMQ는 연결되어있는 클라이언트들에게 데이터를 푸시합니다.
+서버에서 `RabbitMQ`의 큐 시스템에 데이터를 전송하면, `RabbitMQ`는 연결되어있는 클라이언트들에게 데이터를 푸시합니다.
+
+> `RabbitMQ`는 내부적으로 `AMQP`(Advancded Message Queue Protocol)를 사용하고 있습니다.  
+> 추가로 IoT 통신에서는 `MQTT`(Message Queueing Telemetry Transport)가 많이 사용됩니다.
 
 ```mermaid
 sequenceDiagram
