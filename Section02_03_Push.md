@@ -39,10 +39,9 @@ sequenceDiagram
 > 참고자료  
 > [AWS - Kafka와 RabbitMQ의 차이점은 무엇인가요?](https://aws.amazon.com/ko/compare/the-difference-between-rabbitmq-and-kafka/)  
 > [IoT 통신을 위해 RabbitMQ를 선택한 이유](https://mahns.oopy.io/dev/1)  
+> [MQTT vs AMQP for IoT](https://www.hivemq.com/article/mqtt-vs-amqp-for-iot/)
 > [MQTT Essentials](https://www.youtube.com/playlist?list=PLRkdoPznE1EMXLW6XoYLGd4uUaB6wB0wd)
 
 <hr>
 
-강의에서는 가장 단순한 형태의 Push 방식만을 다루고 있습니다.
-
-메시지 큐를 활용하는 AMQP, STOMP, MQTT 등과 이를 기반으로 구현된 RabbitMQ, Mosquitto, HiveMQ, Kafka 등은 추후에 다루겠습니다.
+강의에서는 가장 단순한 형태의 Push 방식만을 다루고 있습니다. `AMQP`, `MQTT` 등 다른 메시징 프로토콜은 추후에 다루겠습니다.
